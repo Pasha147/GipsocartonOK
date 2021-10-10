@@ -6,9 +6,9 @@ const About = ({ about }) => {
   let posT = { top: "-100%", left: "0", opacity: "0" };
   let posR = { top: "20%", left: "100%", opacity: "0" };
   if (position === 1) {
-    posL = { top: "-3%", left: "-10%", opacity: "90%" };
+    posL = { top: "-3%", left: "-5%", opacity: "90%" };
     posT = { top: "15%", left: "-3%", opacity: "100%" };
-    posR = { top: "0", left: "45%", opacity: "100%" };
+    posR = { top: "0", left: "51%", opacity: "100%" };
   }
   useEffect(() => {
     const timeout = setTimeout(() => {
