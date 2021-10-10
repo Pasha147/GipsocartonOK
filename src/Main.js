@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from "react";
 import data from "./menu.js";
 import Slider from "./Slider";
+import About from "./About";
 
 const Main = () => {
   const [curItem, setCurItem] = useState(0);
-  const slider = data[curItem].slider;
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const lastIndex = slider.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
-    }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index, slider]);
+  let slider = data[curItem].slider;
+  let { about } = data[curItem];
+  console.log(about);
 
   return (
     <main>
@@ -33,12 +25,17 @@ const Main = () => {
         })}
       </nav>
 
-      {slider.length > 1 && (
+      {slider && slider.length > 1 && (
         <section className="sectionCenter">
           <Slider slider={slider} />
         </section>
       )}
-      {slider.length === 1 && (
+      {about && (
+        <section className="sectionCenter">
+          <About about={data[curItem].about} />
+        </section>
+      )}
+      {slider && slider.length < 2 && (
         <section className="sectionCenter">
           <article className="activeSlide" key={0}>
             <h3>{slider[0].title}</h3>

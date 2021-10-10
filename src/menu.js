@@ -2,13 +2,11 @@ const menu = [
   {
     id: 0,
     title: "О нас",
-    slider: [
-      {
-        title: "О нас",
-        image: "../img/scr.jpg",
-        text: "ГипсокартонОК - компания предоставляющая услги профессионального монтажа гипсокартона любой сложности",
-      },
-    ],
+    about: {
+      title: "О нас",
+      image: ["../img/scr.jpg", "../img/works1.jpg", "../img/works3.jpg"],
+      text: "ГипсокартонОК - компания предоставляющая услги профессионального монтажа гипсокартона любой сложности",
+    },
   },
   {
     id: 1,
@@ -31,34 +29,34 @@ const menu = [
     title: "Наши работы",
     slider: [
       {
-        title: "Наши работы1",
-        image: "../img/scr1.jpg",
-        text: "1Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        title: "Проект 2020 года",
+        image: "../img/works1.jpg",
+        text: "Монтаж гипсокартона на потолок.",
       },
       {
-        title: "Наши работы2",
-        image: "../img/scr2.jpg",
-        text: "2Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        title: "Проект 2018 года",
+        image: "../img/works2.jpg",
+        text: "Монтаж гипсокартона на стены с нишами.",
       },
       {
-        title: "Наши работы3",
-        image: "../img/scr3.jpg",
-        text: "3Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        title: "Проект 2017 года",
+        image: "../img/works3.jpg",
+        text: "Монтаж гипсокатрона на стены с дверными проемами.",
       },
       {
-        title: "Наши работы4",
-        image: "../img/scr4.jpg",
-        text: "4Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        title: "Проект 2019 года",
+        image: "../img/works4.jpg",
+        text: "Монтаж гипсокатрона на стены с дверными проемами.",
       },
       {
-        title: "Наши работы5",
-        image: "../img/scr4.jpg",
-        text: "5Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        title: "Проект 2021 года",
+        image: "../img/works5.jpg",
+        text: "Монтаж перегородок из гипсокартона",
       },
       {
-        title: "Наши работы6",
-        image: "../img/scr4.jpg",
-        text: "6Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        title: "Проект 2021 года",
+        image: "../img/works6.jpg",
+        text: "Монтаж гипсокартона на потолок.",
       },
     ],
   },

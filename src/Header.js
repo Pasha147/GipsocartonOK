@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <div className="head__right">
         <div className="headInfo__title">
-          <h1>ГипсокартонOK</h1>
+          <h1>Гипсокартон Про</h1>
         </div>
         <div className="headInfo__contacts">
           <div className="contacts__item tel">
