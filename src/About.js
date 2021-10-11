@@ -2,20 +2,23 @@ import React, { useState, useEffect } from "react";
 
 const About = ({ about }) => {
   const [position, setPosition] = useState(0);
-  let posL = { top: "0", left: "-100%", opacity: "0" };
-  let posT = { top: "-100%", left: "0", opacity: "0" };
-  let posR = { top: "20%", left: "100%", opacity: "0" };
+  const [z, setZ] = useState(["0", "1", "0"]);
+
+  let posL = { top: "0", left: "-50%", opacity: "0", zIndex: "0" };
+  let posT = { top: "-50%", left: "0", opacity: "0", zIndex: "0" };
+  let posR = { top: "20%", left: "100%", opacity: "0", zIndex: "0" };
   if (position === 1) {
-    posL = { top: "-3%", left: "-5%", opacity: "90%" };
-    posT = { top: "15%", left: "-3%", opacity: "100%" };
-    posR = { top: "0", left: "51%", opacity: "100%" };
+    posL = { top: "0", left: "0", opacity: "100%", zIndex: z[0] };
+    posT = { top: "15%", left: "5%", opacity: "100%", zIndex: z[1] };
+    posR = { top: "5%", left: "51%", opacity: "100%", zIndex: z[2] };
   }
   useEffect(() => {
     const timeout = setTimeout(() => {
       setPosition(1);
-    }, 300);
+    }, 100);
     return () => clearTimeout(timeout);
   }, []);
+
   return (
     <div className="about">
       <div className="about__imgCont">
@@ -24,38 +27,34 @@ const About = ({ about }) => {
           style={posR}
           src={about.image[2]}
           alt={about.title}
+          onClick={() => {
+            setZ(["0", "1", "2"]);
+          }}
         />
         <img
           className="about__img"
           style={posT}
           src={about.image[0]}
           alt={about.title}
+          onClick={() => {
+            setZ(["0", "1", "0"]);
+          }}
         />
         <img
           className="about__img"
           style={posL}
           src={about.image[1]}
           alt={about.title}
+          onClick={() => {
+            setZ(["2", "1", "0"]);
+          }}
         />
       </div>
       <div className="about__textCont">
-        <h2>
-          Компания ГипсокартонПро предосталяет услуги монтажа гипсокартонных
-          конструкций любой сложности
-        </h2>
-        <p>
-          &emsp; Наши гипсокартонщики предоставляют услуги по монтажу
-          гипсокартона. Мы профессионально смонтируем потолки, перегородки,
-          фальшстены, откосы, ниши под карниз, ниши под подсветку и т.д.
-        </p>
-        <p>
-          &emsp; У нас достаточно большой опыт работы в монтаже гипсокартона.
-          Гипсокартонные работы проводим по технологии, это даёт гарантию
-          надёжности наших гипсокартонных конструкций. Также мы можем
-          предоставить услуги по выбору материалов для качественного монтажа
-          гипсокартона. А также можем организовать доставку материалов на
-          объект.
-        </p>
+        <h2>{about.h2}</h2>
+        {about.p.map((text, index) => {
+          return <p key={index}>&emsp;{text}</p>;
+        })}
       </div>
     </div>
   );

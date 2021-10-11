@@ -47,7 +47,7 @@ const Main = () => {
       )}
       {services && (
         <section className="sectionCenter">
-          <article>
+          <article className="services__article">
             <h3>{data[curItem].title1}</h3>
             <ul className="services">
               {data[curItem].services.map((item, index) => {
@@ -71,7 +71,7 @@ const Main = () => {
           <article>
             <h3>Расположение офиса компании</h3>
             <img
-              className="sliderImg"
+              className="contacts__img"
               src={contacts.image}
               alt={contacts.title}
             />
