@@ -1,8 +1,9 @@
 import React from "react";
 
 import { BsSkype } from "react-icons/bs";
+
 import {
-  FaRegEnvelope,
+  // FaRegEnvelope,
   FaPhoneAlt,
   FaEnvelope,
   // FaFacebook,

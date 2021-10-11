@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+// import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Slider = ({ slider }) => {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -11,16 +11,23 @@ const menu = [
   {
     id: 1,
     title: "Наши услуги",
-    slider: [
+    title1: "Гипсокартон Про предоставляет слудующие услуги:",
+    services: [
       {
-        title: "Наши услуги",
-        image: "../img/scr.jpg",
-        text: "1Услги профессионального монтажа гипсокартона любой сложности",
+        title: "Разработка проекта гипсокартонной конструкции.",
+        text: "Специалисты нашей компании помогут разработать проект несущих конструкций и подобрать необходимые материалы и комплектующие. Наши специалисты выезжают на место монтажа и производят необходимые замеры и расчеты.",
       },
       {
-        title: "Наши услуги",
-        image: "../img/scr2.jpg",
-        text: "2Услги профессионального монтажа гипсокартона любой сложности",
+        title: "Монтаж гипсокартона.",
+        text: "Монтажники нашей компании производят монтаж в заданные сроки, со стопроцентным соответствием проекту (быстро, четко и без лишней пыли).",
+      },
+      {
+        title: "Доставка материалов.",
+        text: "Наша компания поможет с организацией доставки материалов и комплектующих на объекта.",
+      },
+      {
+        title: "Подготовка объекта к монтажу.",
+        text: "Наши монтажники при необходимости производят подготовку територии объекта к монтажу.",
       },
     ],
   },
@@ -74,24 +81,11 @@ const menu = [
   {
     id: 4,
     title: "котакты",
-    slider: [
-      {
-        title: "котакты",
-        image: "../img/scr.jpg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "LogIn",
-    slider: [
-      {
-        title: "LogIn",
-        image: "../img/logo.bmp",
-        text: "sdfasdfasdf",
-      },
-    ],
+    contacts: {
+      title: "котакты",
+      image: "../img/Map.jpg",
+      text: "Lorem ipsum dolor sit amet consectetur",
+    },
   },
 ];
 

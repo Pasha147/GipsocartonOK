@@ -30,6 +30,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .headInfo {
@@ -82,8 +83,8 @@ h1 {
   flex-wrap: wrap;
 }
 .contacts__item {
-  margin: 0.25rem 1rem;
-  padding: 0.25rem 0.25rem;
+  margin: 0.125rem 0.5rem;
+  padding: 0.125rem 0.125rem;
   display: block;
 }
 
@@ -236,6 +237,33 @@ nav {
 }
 /*---------=================-----------------*/
 
+/*--------- services -----------------*/
+.services li {
+  text-align: center;
+  margin-top: 1rem;
+}
+.services p {
+  text-align: justify;
+}
+.services h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.services__underlineCont {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services__underline {
+  height: 2px;
+  width: 90%;
+  background: #8f8ba5;
+}
+
+/*---------=================-----------------*/
+
 /*--------- sectionCenter -----------------*/
 .sectionCenter {
   /* border: red 2px solid; */
@@ -261,17 +289,26 @@ nav {
   right: 0;
 }
 
-article {
+.activeSlide {
+  width: 100%;
+}
+.sliderImg {
+  object-fit: cover;
+  height: 30rem;
+  width: 25rem;
+}
+
+/* article {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0%;
-  border: 2px solid #c3bce6;
+  opacity: 0%; 
+    border: 2px solid #c3bce6;
   transition: all 0.6s linear;
-}
-.articleSlider p {
+} */
+/* .articleSlider p {
   max-width: 35rem;
 }
 .sliderImg {
@@ -289,13 +326,13 @@ article.lastSlide {
 }
 article.nextSlide {
   transform: translateX(100%);
-}
+} */
 /* ------------------------------------- */
 
 footer {
   width: 100%;
   height: 3rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
