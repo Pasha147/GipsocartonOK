@@ -6,11 +6,11 @@ const About = ({ about }) => {
 
   let posL = { top: "0", left: "-50%", opacity: "0", zIndex: "0" };
   let posT = { top: "-50%", left: "0", opacity: "0", zIndex: "0" };
-  let posR = { top: "20%", left: "100%", opacity: "0", zIndex: "0" };
+  let posR = { top: "20%", right: "-50%", opacity: "0", zIndex: "0" };
   if (position === 1) {
     posL = { top: "0", left: "0", opacity: "100%", zIndex: z[0] };
-    posT = { top: "15%", left: "5%", opacity: "100%", zIndex: z[1] };
-    posR = { top: "5%", left: "51%", opacity: "100%", zIndex: z[2] };
+    posT = { top: "15%", left: "2%", opacity: "100%", zIndex: z[1] };
+    posR = { top: "5%", right: "3%", opacity: "100%", zIndex: z[2] };
   }
   useEffect(() => {
     const timeout = setTimeout(() => {

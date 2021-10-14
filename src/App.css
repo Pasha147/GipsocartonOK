@@ -235,7 +235,7 @@ nav {
   height: 80%;
   /* transition: all 1.5s cubic-bezier(0.39, 1.49, 0.66, 0.99); */
   transition: all 1.5s cubic-bezier(0.39, 1.49, 0.66, 0.99);
-  transition-property: top, left, opacity;
+  transition-property: right, top, left, opacity;
   /* transition: left 1.5s cubic-bezier(0.39, 1.49, 0.66, 0.99); */
   /* transition: opacity 1.5s cubic-bezier(0.39, 1.49, 0.66, 0.99); */
 
