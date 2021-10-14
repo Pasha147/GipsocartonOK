@@ -75,11 +75,11 @@ const menu = [
   {
     id: 3,
     title: "Наши расценки",
-    slider: [
+    prices: [
       {
         title: "Наши расценки",
         image: "../img/scr.jpg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam, atque quibusdam neque, consequatur aut itaque, officia nihil tempore dolores vel illo modi hic velit voluptatibus. Porro, eveniet? Facilis dolorum vero inventore illo quis maiores necessitatibus suscipit ex. Aliquam necessitatibus architecto quis eos excepturi hic repudiandae omnis totam harum possimus.",
+        text: "Цены на услуги предоставляемые нашей компанией являются договорными и зависят от многих факторов - объем, сложность, материалы, сроки, размещение объекта и др. В среднем цена монтажа гипсокатонных конструкций составляет 100$ за метр квадратный.",
       },
     ],
   },

@@ -15,7 +15,7 @@ import { BsSkype } from "react-icons/bs";
 const Main = () => {
   const [curItem, setCurItem] = useState(0);
   let slider = data[curItem].slider;
-  let { about, services, contacts } = data[curItem];
+  let { about, services, contacts, prices } = data[curItem];
 
   // console.log(contacts);
 
@@ -98,16 +98,18 @@ const Main = () => {
         </section>
       )}
 
-      {slider && slider.length < 2 && (
+      {prices && (
         <section className="sectionCenter">
-          <article className="activeSlide">
-            <h3>{slider[0].title}</h3>
+          <article className="prices">
+            <h3>{prices[0].title}</h3>
             <img
-              className="sliderImg"
-              src={slider[0].image}
-              alt={slider[0].title}
+              className="prices__img"
+              src={prices[0].image}
+              alt={prices[0].title}
             />
-            <p>{slider[0].text}</p>
+            <div className="prices__p">
+              <p>{prices[0].text}</p>
+            </div>
           </article>
         </section>
       )}

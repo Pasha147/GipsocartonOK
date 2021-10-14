@@ -35,6 +35,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   /* overflow: hidden; */
 }
 
@@ -300,6 +301,19 @@ nav {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+/*---------=================-----------------*/
+
+/*--------- contacts -----------------*/
+.prices__img {
+  object-fit: cover;
+  height: 30rem;
+  max-width: 95%;
+  height: 70%;
+}
+.prices__p {
+  padding-top: 1rem;
+}
+
 /*---------=================-----------------*/
 
 /*--------- sectionCenter -----------------*/
